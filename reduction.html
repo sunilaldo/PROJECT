@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Reduction</title>
+    <link rel="stylesheet" href="reduction.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Mess Reduction</h2>
+        <form action="reduction.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="hostelid">Hostel ID:</label>
+                <input type="text" id="hostelid" name="hostelid" required>
+            </div>
+             <div class="form-group">
+                <label for="block">Block:</label>
+                <select id="block" name="block" required>
+                    <option value="">Select Block</option>
+                    <option value="Licet">Licet</option>
+                    <option value="A Block">A Block</option>
+                    <option value="Common Block">Common Block</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="roomno">Room Number:</label>
+                <input type="text" id="roomno" name="roomno" required>
+            </div>
+            <div class="form-group">
+                <label for="assistantdirector">Assistant Director:</label>
+                <input type="text" id="assistantdirector" name="assistantdirector" required>
+            </div>
+            <div class="form-group">
+                <label for="daysLeaving">Number of Days Leaving:</label>
+                <input type="number" id="daysLeaving" name="daysLeaving" min="1" max="10" required>
+            </div>
+           
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

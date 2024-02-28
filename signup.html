@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css"> <!-- Include your existing stylesheet -->
+
+    <script>
+        // JavaScript function to validate password match
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match. Please enter matching passwords.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <!-- ... (unchanged) ... -->
+        </div>
+
+        <div class="content">
+            <h1>Sign Up for Loho Mess</h1>
+
+            <div class="form">
+                <h2>Create an Account</h2>
+                <form method="post" action="signup.php" onsubmit="return validatePassword()">
+                    <input type="text" name="username" placeholder="Enter Name" required>
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                    <input type="password" id="password" name="password" placeholder="Create Password" required>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                    <button type="submit" class="btnn">Sign Up</button>
+
+                </form>
+               <br><p class="link">Already have an account? <a href="login.html">Log in here</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

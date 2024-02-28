@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Monthly Mess Coupon Registration</title>
+    <link rel="stylesheet" type="text/css" href="coupon.css">
+</head>
+<body>
+
+    <h2>Monthly Mess Coupon Registration</h2>
+    <form method="post" action="coupon.php">
+        <label for="hostelid">Hostel ID:</label><br>
+        <input type="text" id="hostelid" name="hostelid" required><br><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="messType">Mess Type:</label><br>
+        <select id="messType" name="messType" required>
+            <option value="veg">Veg</option>
+            <option value="metro">Metro</option>
+            <option value="non-veg">Non-Veg</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
